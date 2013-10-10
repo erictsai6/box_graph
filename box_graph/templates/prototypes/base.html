@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>{% block title %}Main Page{% endblock %}</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="icon" type="image/png" href="{{MEDIA_URL}}images/favicon.png"/>
+		<link rel="stylesheet" href="{{MEDIA_URL}}css/bootstrap.min.css" />
+		{% block extra-css %}{% endblock %}
+
+		<script type="text/javascript" src="{{MEDIA_URL}}plugins/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="{{MEDIA_URL}}plugins/bootstrap.min.js"></script>
+		{% block extra-js %}{% endblock %}
+		<script type="text/javascript">
+			$(document).ready(function() {
+				console.log("Initialized");
+			});
+		</script>
+	</head>
+	<body>
+		<div id="main-content">
+			{% block main-content %}
+			{% endblock %}
+		</div>
+	</body>
+</html>
