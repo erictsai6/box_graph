@@ -1,0 +1,44 @@
+.bg-box {
+  font: 10px sans-serif;
+}
+.bg-box  {
+  fill: #fff;
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.bg-box .center {
+  stroke-dasharray: 3,3;
+}
+
+.bg-box .outlier {
+  fill: none;
+  stroke: #ccc;
+}
+.bg-axis path,
+.bg-axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.bg-axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+.bg-axis path,
+.bg-axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.bg-axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+.bg-median {
+  fill: #fff;
+  stroke: #000;
+  stroke-width: 1.5px;
+}
